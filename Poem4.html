@@ -1,0 +1,104 @@
+<!--
+
+More info on HTML: https://www.w3schools.com/html/default.asp
+
+More info on CSS: https://www.w3schools.com/css/default.asp
+
+-->
+
+<!doctype html>
+
+<html>
+
+	<head>
+
+		<title>Square Up or Shut Up</title>
+		<link href="css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Ravi+Prakash&display=swap" rel="stylesheet">
+
+		<meta charset="UTF-8">
+
+	</head>
+
+
+	<body>
+
+		<div style="background-image: url('images/Pic14.gif');" class="Poem4Background">
+
+		<header>
+			<div class="PoemHeader4" onmousedown="document.getElementById('Pic15').stop(); document.getElementById('Pic16').stop();"
+					onmouseup="document.getElementById('Pic15').start(); document.getElementById('Pic16').start();">
+			Square Up or Shut Up
+			</div>
+		</header>
+
+		<p class="Poem4Stanza1">
+			1.  Get Dizzy.
+			<br>&emsp;Defeat the deathwing.
+			<br>&emsp;Complete the soul raid.
+			</p>
+
+		<p class="Poem4Stanza2">
+			2.  Pow Wow Chow!
+			<br>&emsp;Deny them!
+			<br>&emsp;Mock them!
+			<br>&emsp;We must not yield!
+			</p>
+
+		<p class="Poem4Stanza3">
+			3.  Better give it- good hits.
+			<br>&emsp;None of those were as good,
+			<br>&emsp;u a sucker.
+			</p>
+
+		<p class="Poem4Stanza4">
+			4.  Pow Wow my dear lizzy!
+			<br>&emsp;Probably should have done this before!
+			<br>&emsp;Pow Wow- may it rain fury!
+			<br>&emsp;You are drop, I am champion!!!
+		</p>
+
+
+		<marquee id = "Pic15" scrollamount="75" loop="-1" direction="left">
+			<div class="Pic15">
+				<img src="images/Pic15.gif" width="200px">
+				<br>
+			</div>
+		</marquee>
+
+		<marquee id = "Pic16" scrollamount="75" loop="-1" direction="right">
+			<div class="Pic16">
+					<img src="images/Pic16.gif" class="Pic16" width="200px">
+				<br>
+			</div>
+		</marquee>
+
+		<div class="RadioDiv">
+			Did you like this poem?<br>
+			<input class="YesRadio" type="radio" value="Yes" id="Yes" name="Answer">Yes
+			<input class="NoRadio" type="radio" value="No" id="No" name="Answer">No
+			<br>
+			<button class="ChangePageButton" onclick="ChangePageOrNot()">Answer</button>
+
+
+		</div>
+
+
+		<script>
+			function ChangePageOrNot(){
+				if( document.getElementById("No").checked == true){
+					alert("Are you sure? Try reading it again. Maybe you didn't understand it.");
+				}
+				else if( document.getElementById("Yes").checked == true){
+					window.open("index.html");
+					window.close();
+				}
+			}
+			</script>
+
+	</body>
+
+
+</html>
