@@ -36,6 +36,10 @@
   100% {background-color: #216C2A}
 }
 
+.Poem1background{
+  background-size: 150px; 
+}
+
 .Wallpaper{
   animation-name: ChangeBackground;
   animation-duration: 1.5s;
