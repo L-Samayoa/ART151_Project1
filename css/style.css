@@ -37,12 +37,12 @@
 }
 
 .Poem1background{
-  background-size: 150px; 
+  background-size: 150px;
 }
 
 .Wallpaper{
   animation-name: ChangeBackground;
-  animation-duration: 1.5s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
 }
 
@@ -91,7 +91,7 @@
   position: absolute;
   animation-name: PicAnimation;
   animation-direction: normal;
-  animation-duration: 0.5s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
 }
 
